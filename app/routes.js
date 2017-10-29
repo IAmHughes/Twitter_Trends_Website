@@ -1,5 +1,7 @@
 var core = require('./controllers/core');
-module.exports = function(app)
+var api = require('./controllers/api');
+
+module.exports = (app) =>
 {
     //home Route
     app.get('/', core.home);
@@ -8,8 +10,8 @@ module.exports = function(app)
     app.get('/top', core.top);
 
     //results Route
-    app.get('/results', (req, res) => res.json({message: 'This is the results page'}));
+    app.get('/results', core.results);
 
     //api results Route
-    app.get('/api/results', (req, res) => res.json({message: 'This is the api results page'}));
+    app.get('/api/results', api.results);
 }
