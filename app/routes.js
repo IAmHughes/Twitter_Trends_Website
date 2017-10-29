@@ -5,8 +5,11 @@ module.exports = function(app)
     app.get('/', core.home);
 
     //top Route
-    app.get('/top', (req, res) => res.send('This is the top page'));
+    app.get('/top', core.top);
 
     //results Route
-    app.get('/api/results', (req, res) => res.json({message: 'This is the results page'}));
+    app.get('/results', (req, res) => res.json({message: 'This is the results page'}));
+
+    //api results Route
+    app.get('/api/results', (req, res) => res.json({message: 'This is the api results page'}));
 }
