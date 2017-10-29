@@ -1,7 +1,8 @@
+var core = require('./controllers/core');
 module.exports = function(app)
 {
     //home Route
-    app.get('/', (req, res) => res.send('This is the home page'));
+    app.get('/', core.home);
 
     //top Route
     app.get('/top', (req, res) => res.send('This is the top page'));
