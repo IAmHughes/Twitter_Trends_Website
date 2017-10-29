@@ -1,0 +1,26 @@
+{
+  "name": "twitter_trends_website",
+  "version": "1.0.0",
+  "description": "Analyze Twitter feeds and return results for given search term.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeiseCreations/Twitter_Trends_Website.git"
+  },
+  "author": "Thomas Hughes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WeiseCreations/Twitter_Trends_Website/issues"
+  },
+  "homepage": "https://github.com/WeiseCreations/Twitter_Trends_Website#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
